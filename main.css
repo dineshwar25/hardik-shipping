@@ -1,0 +1,300 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #4CAF50;
+}
+
+/* Forms and Lists */
+form input {
+  padding: 10px;
+  margin: 10px 5px;
+  width: 45%;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+.home-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Features Section */
+.features {
+  text-align: center;
+  margin: 50px 0;
+  padding: 0 20px;
+}
+
+.features h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* Why Choose Us */
+.why-us {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.why-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.image-gallery {
+  text-align: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.image-gallery h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-row img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}.track-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2196F3;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.track-button:hover {
+  background-color: #0b7dda;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+p {
+  font-weight: 300;
+  font-size: 18px;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-out;
+}
+.track-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2196F3;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.track-button:hover {
+  background-color: #0b7dda;
+  transform: scale(1.1); /* Slightly increases the button size */
+}
+/* Slide-in from right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.features {
+  animation: slideInRight 1s ease-out;
+}
+.home-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+@keyframes slideInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in on scroll */
+.why-us {
+  animation: slideInUp 1s ease-out;
+}
+.parallax {
+  background-image: url('AAA.jpg'); /* Add your background image */
+  height: 400px;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+}
+
+.parallax h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.parallax p {
+  font-size: 1.5em;
+}
+.map-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
